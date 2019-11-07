@@ -4,7 +4,7 @@ LABEL maintainer="iknpx@aol.com"
 
 RUN echo Server = https://mirrors.atviras.lt/archlinux/\$repo/os/\$arch > /etc/pacman.d/mirrorlist && \
 	pacman -Sy && \
-    pacman -S wget tar --noconfirm && \
+    pacman -S wget tar git --noconfirm && \
     wget https://nodejs.org/dist/v12.12.0/node-v12.12.0-linux-x64.tar.xz && \
     tar -xJvf node-v12.12.0-linux-x64.tar.xz && \
     mv /node-v12.12.0-linux-x64 /usr/local/lib/node && \
