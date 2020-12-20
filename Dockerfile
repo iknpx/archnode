@@ -10,6 +10,6 @@ RUN echo Server = https://mirrors.atviras.lt/archlinux/\$repo/os/\$arch > /etc/p
     mv /node-v14.15.1-linux-x64 /usr/local/lib/node && \
     rm -rf ./node-v14.15.1-linux-x64.tar.xz && \
     export PATH=/usr/local/lib/node/bin:$PATH && \
-	npm i -g yarn
+	npm i -g yarn migrate-mongo
 
 ENV PATH="/usr/local/lib/node/bin:${PATH}"
